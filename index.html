@@ -3,36 +3,368 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>QualityTesters.com</title>
+<title>QualityTesters.com — A domain for the human layer of AI software</title>
+<meta name="description" content="QualityTesters.com is available. A premium domain at the intersection of quality assurance, human testing networks, and AI-generated code.">
+<meta property="og:title" content="QualityTesters.com — available for acquisition">
+<meta property="og:description" content="Machines write the code. Someone still has to answer for it. A premium domain at the intersection of QA and AI.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✓</text></svg>">
 <style>
-body{
-    font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 40px auto;
-    padding: 20px;
-    line-height: 1.6;
-}
-h1{
-    color:#1f3c88;
-}
+  :root{
+    --ink:#0d1117;
+    --paper:#fbfaf7;
+    --muted:#5b6472;
+    --line:#e3e0d8;
+    --accent:#1f3c88;
+    --accent-soft:#eef1fa;
+    --pass:#1a7f5a;
+    --max:1080px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Helvetica,Arial,sans-serif;
+    font-size:18px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 24px;}
+  .narrow{max-width:720px;}
+
+  header.bar{
+    border-bottom:1px solid var(--line);
+    background:rgba(251,250,247,.85);
+    backdrop-filter:blur(8px);
+    position:sticky;top:0;z-index:50;
+  }
+  .bar-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:16px;padding:14px 24px;max-width:var(--max);margin:0 auto;
+  }
+  .mark{font-weight:700;letter-spacing:-.02em;font-size:17px;}
+  .mark span{color:var(--accent);}
+  .status{
+    font-size:13px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--muted);display:flex;align-items:center;gap:8px;
+  }
+  .dot{width:8px;height:8px;border-radius:50%;background:var(--pass);
+    box-shadow:0 0 0 4px rgba(26,127,90,.15);}
+
+  .hero{padding:88px 0 64px;}
+  .eyebrow{
+    font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);font-weight:600;margin:0 0 20px;
+  }
+  h1{
+    font-size:clamp(2.2rem,6vw,4rem);
+    line-height:1.05;letter-spacing:-.035em;margin:0 0 24px;font-weight:700;
+  }
+  h1 em{font-style:normal;color:var(--accent);}
+  .lede{font-size:clamp(1.05rem,2.2vw,1.35rem);color:var(--muted);margin:0 0 36px;max-width:40ch;}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;}
+  .btn{
+    display:inline-block;padding:14px 26px;border-radius:6px;
+    font-size:16px;font-weight:600;text-decoration:none;transition:.15s ease;
+  }
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#152a63;transform:translateY(-1px);}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+  .term{
+    margin-top:56px;border:1px solid var(--line);border-radius:10px;
+    background:#0d1117;color:#c9d1d9;overflow:hidden;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:14px;line-height:1.9;box-shadow:0 20px 50px -30px rgba(13,17,23,.6);
+  }
+  .term-head{
+    display:flex;gap:7px;padding:12px 16px;background:#161b22;border-bottom:1px solid #21262d;
+  }
+  .term-head i{width:11px;height:11px;border-radius:50%;background:#30363d;display:block;}
+  .term-body{padding:20px 22px;overflow-x:auto;}
+  .term-body pre{margin:0;font:inherit;}
+  .term-body .c{color:#8b949e;}
+  .term-body .ok{color:#3fb950;}
+  .term-body .no{color:#f85149;}
+  .term-body .hl{color:#d2a8ff;}
+
+  section{padding:72px 0;border-top:1px solid var(--line);}
+  h2{
+    font-size:clamp(1.5rem,3.4vw,2.1rem);letter-spacing:-.025em;
+    line-height:1.2;margin:0 0 20px;font-weight:700;
+  }
+  h3{font-size:1.05rem;margin:0 0 8px;letter-spacing:-.01em;}
+  p{margin:0 0 20px;}
+  .kicker{
+    font-size:13px;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--muted);font-weight:600;margin:0 0 14px;
+  }
+  .pull{
+    font-size:clamp(1.2rem,2.8vw,1.6rem);line-height:1.4;letter-spacing:-.02em;
+    border-left:3px solid var(--accent);padding:6px 0 6px 24px;margin:40px 0;
+  }
+
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-top:36px;}
+  .card{border:1px solid var(--line);border-radius:8px;padding:24px;background:#fff;}
+  .card .num{
+    font-family:ui-monospace,monospace;font-size:12px;color:var(--accent);
+    letter-spacing:.1em;display:block;margin-bottom:12px;
+  }
+  .card p{font-size:15px;color:var(--muted);margin:0;}
+
+  .shots{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:36px;}
+  figure{margin:0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff;}
+  figure .frame{
+    aspect-ratio:16/10;background:var(--accent-soft);
+    display:flex;align-items:center;justify-content:center;position:relative;
+  }
+  figure img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+  figure img.missing{display:none;}
+  .ph{
+    display:none;flex-direction:column;align-items:center;gap:10px;
+    color:var(--accent);font-family:ui-monospace,monospace;font-size:12px;
+    letter-spacing:.08em;text-align:center;padding:20px;
+  }
+  .frame.empty .ph{display:flex;}
+  .ph svg{opacity:.35;}
+  figcaption{padding:16px 18px;font-size:14px;color:var(--muted);border-top:1px solid var(--line);}
+  figcaption b{display:block;color:var(--ink);font-size:15px;margin-bottom:3px;font-weight:600;}
+
+  ul.fit{list-style:none;padding:0;margin:28px 0 0;}
+  ul.fit li{
+    padding:16px 0;border-bottom:1px solid var(--line);
+    display:flex;gap:16px;align-items:baseline;font-size:16px;
+  }
+  ul.fit li:first-child{border-top:1px solid var(--line);}
+  ul.fit .tick{color:var(--pass);font-family:ui-monospace,monospace;flex:0 0 auto;}
+
+  .offer{background:var(--ink);color:#e6edf3;border-radius:12px;padding:48px 40px;}
+  .offer h2{color:#fff;}
+  .offer p{color:#9aa4b2;}
+  .offer .btn-primary{background:#fff;color:var(--ink);}
+  .offer .btn-primary:hover{background:#e6edf3;}
+  .offer .btn-ghost{border-color:#30363d;color:#e6edf3;}
+  .offer .btn-ghost:hover{border-color:#8b949e;color:#fff;}
+  .meta{
+    display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    margin:32px 0;padding:24px 0;border-top:1px solid #21262d;border-bottom:1px solid #21262d;
+  }
+  .meta div span{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#8b949e;margin-bottom:6px;}
+  .meta div b{font-size:16px;font-weight:600;color:#fff;}
+
+  footer{padding:40px 0 64px;font-size:14px;color:var(--muted);}
+  a{color:var(--accent);}
+
+  @media (max-width:640px){
+    .hero{padding:56px 0 40px;}
+    section{padding:52px 0;}
+    .offer{padding:32px 24px;}
+  }
 </style>
 </head>
 <body>
 
-<h1>QualityTesters.com</h1>
+<header class="bar">
+  <div class="bar-inner">
+    <div class="mark">Quality<span>Testers</span>.com</div>
+    <div class="status"><i class="dot"></i> Domain available</div>
+  </div>
+</header>
 
-<p>
-Quality Engineering, Test Automation, Software Delivery Excellence,
-and QA Leadership.
-</p>
+<main>
 
-<p>
-Site under construction.
-</p>
+<div class="wrap hero">
+  <div class="narrow">
+    <p class="eyebrow">Premium domain · Acquisition inquiries open</p>
+    <h1>The code is written by machines. The <em>trust</em> is still built by people.</h1>
+    <p class="lede">QualityTesters.com sits on the fault line between AI-generated software and the humans who have to verify it. That name is for sale.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#inquire">Make an inquiry</a>
+      <a class="btn btn-ghost" href="#thesis">Read the thesis</a>
+    </div>
+  </div>
 
-<p>
-Created by Steve Cerqua.
-</p>
+  <div class="term" aria-label="Illustrative test run output">
+    <div class="term-head"><i></i><i></i><i></i></div>
+    <div class="term-body">
+<pre><span class="c">$ run suite --source=llm-generated</span>
+
+<span class="ok">PASS</span>  unit             1,482 assertions   <span class="c">0.9s</span>
+<span class="ok">PASS</span>  integration        211 assertions   <span class="c">7.4s</span>
+<span class="ok">PASS</span>  static analysis      0 findings     <span class="c">1.2s</span>
+<span class="no">FAIL</span>  human review         <span class="hl">1 finding</span>
+
+<span class="c">  ↳ The logic is correct. The feature is wrong.</span>
+<span class="c">  ↳ Reported by: a tester who read the ticket.</span>
+
+<span class="c">4 suites, 3 green. Ship decision:</span> <span class="hl">held</span>
+</pre>
+    </div>
+  </div>
+</div>
+
+<section id="thesis">
+  <div class="wrap narrow">
+    <p class="kicker">The thesis</p>
+    <h2>Generation got cheap. Verification did not.</h2>
+    <p>For thirty years, writing software was the bottleneck and testing was the tax you paid at the end. That equation has inverted. A model can now produce ten thousand plausible lines before lunch — syntactically clean, well-typed, confidently commented, and occasionally solving a problem nobody asked it to solve.</p>
+    <p>Automated checks confirm that the code does what the code says. They cannot confirm that the code does what the business meant. Coverage metrics inherit the blind spots of the generator, because increasingly the tests were generated too. A suite that grades its own homework is not a safety net; it is a mirror.</p>
+
+    <p class="pull">The scarce resource in AI-era software is not people who can write code. It is people who can tell you, credibly, that it is safe to ship.</p>
+
+    <p>That work is stubbornly human. It means reading the intent behind a requirement, noticing the edge case that never made it into a ticket, recognizing that a flow is technically correct and practically hostile, and being willing to say no with a name attached. Exploratory testing, accessibility judgment, domain intuition, adversarial curiosity — none of it reduces neatly to a prompt.</p>
+    <p>Which points at a market: distributed networks of skilled human testers, credentialed and rated, brought in on demand to audit machine-written work. Part marketplace, part assurance layer, part professional guild. Whatever it ends up being called, it needs a name people already understand.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <p class="kicker">Where the value sits</p>
+    <h2>Four businesses this name already describes</h2>
+  </div>
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <span class="num">01</span>
+        <h3>A tester network</h3>
+        <p>Vetted human QA professionals available on demand, matched to domain and risk profile — a marketplace for people whose entire value is judgment.</p>
+      </div>
+      <div class="card">
+        <span class="num">02</span>
+        <h3>AI code assurance</h3>
+        <p>Independent review of LLM-generated commits, agents, and pipelines: the audit function AI-first engineering orgs will be expected to show.</p>
+      </div>
+      <div class="card">
+        <span class="num">03</span>
+        <h3>Evaluation &amp; red-teaming</h3>
+        <p>Human-in-the-loop scoring, adversarial probing, and regression review for model behavior, where the failure mode is a wrong answer stated well.</p>
+      </div>
+      <div class="card">
+        <span class="num">04</span>
+        <h3>Credentialing &amp; community</h3>
+        <p>Certification, reputation, and standards for a profession whose leverage is about to increase sharply. A trusted noun for the people who say "not yet."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="previously">
+  <div class="wrap narrow">
+    <p class="kicker">Previously at this address</p>
+    <h2>This was never a parked name. It ran a real product.</h2>
+    <p>QualityTesters.com operated as a working SaaS platform — test management, run tracking, defect workflow, and reporting used by real testing teams. The application has since been retired, but the domain carries the history: age, indexed depth, inbound links, and a name that never needed explaining to the audience it was built for.</p>
+    <p>A few screens from the platform:</p>
+  </div>
+  <div class="wrap">
+    <div class="shots">
+
+      <figure>
+        <div class="frame">
+          <img src="assets/screenshots/01-dashboard.png" alt="QualityTesters dashboard showing test run status and pass rates">
+          <div class="ph">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 13h8M8 16h5"/></svg>
+            01-dashboard.png
+          </div>
+        </div>
+        <figcaption><b>Run dashboard</b>Live pass/fail state across active test cycles.</figcaption>
+      </figure>
+
+      <figure>
+        <div class="frame">
+          <img src="assets/screenshots/02-test-cases.png" alt="Test case library with suites and steps">
+          <div class="ph">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h10M7 13h10M7 17h6"/></svg>
+            02-test-cases.png
+          </div>
+        </div>
+        <figcaption><b>Test case library</b>Versioned suites, steps, and expected results.</figcaption>
+      </figure>
+
+      <figure>
+        <div class="frame">
+          <img src="assets/screenshots/03-defects.png" alt="Defect triage and workflow board">
+          <div class="ph">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/></svg>
+            03-defects.png
+          </div>
+        </div>
+        <figcaption><b>Defect workflow</b>Triage, assignment, and resolution tracking.</figcaption>
+      </figure>
+
+      <figure>
+        <div class="frame">
+          <img src="assets/screenshots/04-reports.png" alt="Reporting and coverage analytics">
+          <div class="ph">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 16v-4M12 16V8M17 16v-6"/></svg>
+            04-reports.png
+          </div>
+        </div>
+        <figcaption><b>Coverage &amp; reporting</b>Release readiness at a glance for stakeholders.</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <p class="kicker">Why this name</p>
+    <h2>Two ordinary words, one exact meaning</h2>
+    <ul class="fit">
+      <li><span class="tick">✓</span><span><b>Literal, not clever.</b> No misspelling, no dropped vowel, nothing to spell out on a phone call.</span></li>
+      <li><span class="tick">✓</span><span><b>Category-defining .com.</b> The exact-match term for an entire profession, in the only extension enterprise buyers still trust by default.</span></li>
+      <li><span class="tick">✓</span><span><b>People, not tooling.</b> "Testers" names humans — the right posture in a market where the humans are the differentiator.</span></li>
+      <li><span class="tick">✓</span><span><b>Plural by design.</b> Reads naturally as a network, a marketplace, or a community rather than a single-product tool.</span></li>
+      <li><span class="tick">✓</span><span><b>Aged and established.</b> Prior commercial use, real operating history, and an existing search footprint.</span></li>
+      <li><span class="tick">✓</span><span><b>Durable.</b> Whatever writes the code next decade, someone will still be paid to check it.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="inquire">
+  <div class="wrap">
+    <div class="offer">
+      <div class="narrow">
+        <p class="kicker" style="color:#8b949e;">Acquisition</p>
+        <h2>Serious inquiries welcome.</h2>
+        <p>The domain is available to an operator or investor with a plan for it. Offers are reviewed individually — the right buyer matters more than the fastest one. Transfer is handled through escrow, with a short transition period included.</p>
+      </div>
+      <div class="meta">
+        <div><span>Domain</span><b>QualityTesters.com</b></div>
+        <div><span>Status</span><b>Available</b></div>
+        <div><span>Transfer</span><b>Escrow</b></div>
+        <div><span>Contact</span><b>scerqua@gmail.com</b></div>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:scerqua@gmail.com?subject=Inquiry%3A%20QualityTesters.com&amp;body=Name%3A%0AOrganization%3A%0AIntended%20use%3A%0AOffer%3A%0A">Email an offer</a>
+        <a class="btn btn-ghost" href="mailto:scerqua@gmail.com?subject=Question%20about%20QualityTesters.com">Ask a question</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap narrow">
+    <p>QualityTesters.com — offered by Steve Cerqua. Formerly a working test management platform; screenshots depict the retired application.</p>
+  </div>
+</footer>
+
+<script>
+  // Fall back to a labeled placeholder when a screenshot file hasn't been added yet.
+  document.querySelectorAll('.shots img').forEach(function (img) {
+    function markEmpty() {
+      img.classList.add('missing');
+      img.parentElement.classList.add('empty');
+    }
+    img.addEventListener('error', markEmpty);
+    if (img.complete && img.naturalWidth === 0) markEmpty();
+  });
+</script>
 
 </body>
 </html>
